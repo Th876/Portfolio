@@ -38,11 +38,12 @@
       </div>
       <div class="column">
         <!--Validate form-->
-        <form onsubmit="return validateForm()" action="thank-you.html" method="GET" enctype="text/plain">
+        <form action="https://formsubmit.co/tayhiggins14@gmail.com" method="POST">
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your first name..." required pattern="[A-Za-z]{2,10}" title="Please enter a valid name, e.g. John">
           <label for="lname">Last Name</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name..." required pattern="[A-Za-z]{2,10}" title="Please enter a valid name, e.g. John Doe">
+	   <input type="hidden" name="_next" value="https://th876.github.io/Portfolio/thank-you.html">
           <label for="subj">Subject</label>
           <input type="text" id="subj" name="subject" placeholder="Your subject..." required pattern="^[\p{L}]([-']?[\p{L}]+)*( [\p{L}]([-']?[\p{L}]+)*)+$" title="Please enter a subject and leave no space at the end, e.g. Hello">
           <label for="msg">Message</label>
