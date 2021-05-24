@@ -339,7 +339,7 @@ nav a:hover {
 }
 
 /*Style input areas*/
-input[type=text], select, textarea {
+input[type=text], [type=email], select, textarea {
   width: 100%;
   padding: 15px;
   border: 1px solid #ccc;
