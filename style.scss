@@ -129,7 +129,6 @@ a:hover {
 }
 
 .home-footer {
-    background-color: $eerie-black;
     grid-column-start: 1;
     grid-column-end: end;
     margin-top: 15.62rem;
@@ -282,6 +281,7 @@ a:hover {
 }
    
 .project-footer-style {
+    font-family: 'Roboto Slab', serif;
     color: #ffffff;
     padding: 0.2rem;
     text-align: center;
