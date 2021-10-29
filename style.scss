@@ -1,0 +1,647 @@
+/*Colors for webpage*/
+$lavender: #d0c6e4;
+$eerie-black: #111625;
+$white: #ffffff;
+$light-pink: #FFB6C1;
+$hot-pink: #FF55A2;
+$quartz: #4a4a4a;
+$purple-blue: #bda7e8;
+$black: #000000;
+$green: #04b35b;
+$gray: #7c7c7c;
+/*-------------------------------------------------*/
+
+#home-body {
+    background-color: $eerie-black;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 1rem;
+    overflow-x: hidden;
+    cursor: default;
+}
+
+/*Style navigation menu*/
+.header-home {
+    margin-top: 0.12rem;
+    margin-left: 0.62rem;
+    grid-column-start: 1;
+    grid-column-end: end;
+}
+ 
+.home-logo {
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+    margin-left: 0.62rem;
+ }
+
+nav ul {
+    float: right;
+ }
+
+nav ul li {
+    display: inline-block;
+ }
+ 
+nav ul li a {
+    color: $white;
+    font-size: 1.35rem;
+    text-decoration: none;
+    cursor: pointer;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+ }
+ 
+a.active,
+a:hover {
+    color:$lavender;
+ }
+
+/*Position button and style*/
+.project-button {
+    border-radius: 20px;
+    background-color: $light-pink;
+    padding: 0.62rem 0.93rem 0.62rem 0.93rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: $eerie-black;
+    font-weight: bold;
+}
+
+.project-button:hover {
+    background-color: $eerie-black;
+    color: $white;
+    border: solid 0.12rem $light-pink;
+}
+
+.home-grid {
+    background-color: $eerie-black;
+    color: $white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.home-right-column {
+    margin-top: 5.62rem;
+    padding: 1.87rem;
+    text-align: center;
+}
+
+
+.home-right-column img {
+    border-radius: 15px;
+    position: absolute;
+    z-index: 2;
+    right: 180px
+}
+
+.box { /*create box underneath image*/
+    background-color: $purple-blue;
+    opacity: 0.4;
+    width: 23%;
+    height: 280px;
+    bottom: 340px;
+    left: 1039px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.home-left-column {
+    font-size: 1.22rem;
+    line-height: 1.4;
+    margin-top: 5.625rem;
+    margin-left: 5rem;
+    padding: 1.875rem;
+    text-align: center;
+}
+
+.home-greeting {
+    font-family: 'Recursive', sans-serif;
+    letter-spacing: 0.12rem;
+    font-size: 2rem;
+    opacity: 1;
+}
+
+.p-format {
+    opacity: 0.8;
+    padding-bottom: 1.25rem;
+}
+
+.home-footer {
+    background-color: $eerie-black;
+    grid-column-start: 1;
+    grid-column-end: end;
+    margin-top: 15.62rem;
+    margin-bottom: 0;
+    width: 100%;
+}
+  
+.home-footer-style {
+    background-color: $black;
+    color: $white;
+    padding: 0.2rem;
+    text-align: center;
+    font-size: 0.80rem;
+}
+/*-------------------------------------------------*/
+
+/*Project page*/
+
+#project-body {
+    background-color: $lavender;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.header-project {
+    background-color:$eerie-black;
+    height: 4rem;
+}
+
+.project-logo {
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+    margin-left: 0.62rem;
+}
+
+.proj-nav ul {
+    float: right;
+    margin-top: -3.5rem;
+}
+
+.proj-nav ul li {
+    display: inline-block;
+    line-height: 0.25;
+}
+  
+.proj-nav ul li a {
+    color: $white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+a.active,
+a:hover {
+    color: $lavender;
+}
+
+/*Projects Section*/
+#projects {
+  font-family: Roboto, sans-serif;
+  color: $quartz;
+  background-color: $lavender;
+  padding-top: 5.25rem;
+  display: grid;
+  width: 100%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 5rem;
+  padding: 2rem;
+  width: 50%;
+  margin: auto;
+}
+
+#projects img {
+  width: 100%;
+  height: auto;
+}
+
+.header-projects {
+  font-family: 'Roboto Slab', serif;
+  margin-left: 60px;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.project-title {
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+#projects article {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  box-shadow: $quartz 4px 4px 6px;
+  background: white;
+  margin-bottom: 5rem;
+}
+
+#projects article p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.web-button {
+  padding: 8px 0px 8px 0px;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.web-button-style {
+  background-color: $light-pink;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1.125rem;
+  color: $white;
+  font-weight: bold;
+  width: 50%;
+  text-align: center;
+}
+
+.web-button:hover {
+  background-color: $white;
+  color: $eerie-black;
+  border: solid 0.12rem $light-pink;
+ }
+  
+ 
+.project-footer {
+    background: $black;
+    grid-column-start: 1;
+    grid-column-end: end;
+    margin-bottom: 0;
+    width: 100%;
+}
+   
+.project-footer-style {
+    color: #ffffff;
+    padding: 0.2rem;
+    text-align: center;
+    font-size: 0.85rem;
+}
+/*-------------------------------------------------*/
+ /*About page*/
+
+#about-body {
+    background-color: $lavender;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.header-about {
+    background-color:$eerie-black;
+    height: 4rem;
+}
+
+.about-logo {
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+    margin-left: 0.62rem;
+}
+
+nav ul {
+    float: right;
+    margin-right: 0.5rem;
+    margin-top: 1.56rem;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 1.25rem;
+}
+  
+nav ul li a {
+    color: $white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+a.active,
+a:hover {
+    color: $lavender;
+}
+
+.about-grid {
+    background: $lavender;
+    color: $quartz;
+    display: grid;
+    grid-template-columns: 35% 35% 30%; /*divide columns*/
+}
+
+.left-column, .center-column, .right-column {
+    margin-left:  0.93rem;
+    margin-right: 0.93rem;
+    margin-bottom: 3.75rem;
+    padding: 1.87rem;
+    text-align: left;
+}
+
+.header {
+    margin-left: 0.62rem;
+    margin-right: 0.62rem;
+    margin-top: 2.62rem;
+    padding: 3.12rem;
+    text-align: left;
+}
+  
+.header-text {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: end;
+}
+
+.about-me-pic {
+    float: right; 
+    width: 320px;
+    height: auto;
+    box-shadow: $quartz 4px 4px 6px;
+}
+  
+.left-column {
+    background-color: $lavender;
+}
+
+.center-column {
+    background: $lavender;
+}
+
+.right-column {
+    background-color: $lavender;
+}
+
+.about-footer {
+    background: $black;
+    grid-column-start: 1;
+    grid-column-end: end;
+    margin-bottom: 0;
+    width: 100%;
+}
+   
+.about-footer-style {
+    color: #ffffff;
+    padding: 0.2rem;
+    text-align: center;
+    font-size: 0.85rem;
+}
+/*-------------------------------------------------*/
+
+/*Contact page*/
+#contact-body {
+    background-color: $lavender;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.header-contact {
+    background-color: $eerie-black;
+    height: 4rem;
+}
+
+.contact-logo {
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+    margin-left: 0.62rem;
+}
+
+.contact-nav ul {
+    float: right;
+    margin-right: 0.5rem;
+    margin-top: 1.56rem;
+}
+
+.contact-nav ul li {
+    display: inline-block;
+    line-height: 1.25rem;
+}
+  
+.contact-nav ul li a {
+    color: $white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+a.active,
+a:hover {
+    color: $lavender;
+}
+
+.contact-grid {
+    background: $lavender;
+    color: $quartz;
+    display: grid;
+    grid-template-columns: 50% 50%; /*divide columns*/
+}
+
+.contact-right-column {
+    margin-left: 5rem;
+    margin-right: 8rem;
+    margin-top: 8rem;
+    margin-bottom: -10rem;
+    text-align: left;
+}
+
+.contact-left-column {
+    margin-left: 10rem;
+    margin-right: 8rem;
+    margin-top: 8rem;
+    margin-bottom: -10rem;
+    width: 70%;
+}
+
+/*Style input areas*/
+input[type=text], [type=email], select, textarea {
+  width: 100%;
+  padding: 0.93rem;
+  border: 1px solid #ccc;
+  margin-top: 0.37rem;
+  margin-bottom: 1rem;
+  resize: vertical;
+  box-shadow: $quartz 4px 4px 6px;
+}
+
+button[type=submit] {
+  border-radius: 20px;
+  background-color: $light-pink;
+  padding: 10px 25px 10px 25px;
+  margin-top: 0.81rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: $white;
+  font-weight: bold;
+  border: none;
+}
+
+button[type=submit]:hover {
+  background-color: $white;
+  color: $eerie-black;
+  border: solid 2px $light-pink;
+ }
+
+ label {
+  color: $quartz;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+ }
+
+
+.msg-icon-attribute {
+  color: $gray;
+  text-align: center;
+  font-size: 0.2rem;
+}
+
+.msg-icon-attribute a {
+  text-decoration: none;
+  color: $gray;
+}
+
+.msg-logo {
+  width: 60%;
+  height: auto;
+  margin-left: 3.12rem;
+}
+
+/*Thank you page*/
+#thankyou-body {
+    background-color: $lavender;
+    font-size: 1rem;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.header-thankyou {
+    background-color:$eerie-black;
+    height: 4rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.thankyou-logo {
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+    margin-left: 0.62rem;
+}
+
+.thankyou-nav ul {
+    float: right;
+    margin-top: -3.5rem;
+}
+
+.thankyou-nav ul li {
+    display: inline-block;
+    padding:2px;
+    margin-right: 1.5rem;
+}
+  
+.thankyou-nav ul li a {
+    color: $white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.backhome-link a:link {
+    text-decoration: none;
+    font-weight: bold;
+    color: purple;
+}
+
+.backhome-link a:visited {
+    color: blue;
+}
+
+.backhome-link a:hover {
+    color: $hot-pink;
+}
+
+.backhome-link a:active {
+    color: pink;
+}
+
+.thankyou-content {
+  text-align: center; 
+}
+
+.green-tick {
+    width: 400px;
+    margin-left: 580px;
+    margin-top: 150px;
+}
+
+span { /*style arrow*/    
+    content: "\27F5";
+  }
+
+.thankyou-heading1 {
+  color: $green !important;
+  font-size: 2.5rem;
+  padding-top: 1.2rem 
+}
+
+.thankyou-heading3 {
+  font-size: 1rem;
+  color: $quartz;
+  background-color: $lavender;
+  line-height: 2;
+}
+
+.thankyou-content a {
+  padding-top: 0.62rem;
+  font-size: 1rem;
+}
+
+.thankyou-footer {
+    background: $black;
+    grid-column-start: 1;
+    grid-column-end: end;
+    margin-top: 6.25rem;
+    margin-bottom: 0;
+    width: 100%;
+}
+   
+.thankyou-footer-style {
+  font-family: 'Roboto Slab', serif;  
+  color: $white;
+  padding: 0.2rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+/*-------------------------------------------------*/
+
+/*Style footer  for Contact page*/
+.contact-footer {
+    background: $black;
+    grid-column-start: 1;
+    grid-column-end: end;
+    margin-bottom: 0;
+    width: 100%;
+}
+   
+.contact-footer-style {
+    color: $white;
+    padding: 0.2rem;
+    text-align: center;
+    font-size: 0.85rem;
+}
