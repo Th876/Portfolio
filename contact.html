@@ -14,36 +14,31 @@
   <!--Tahaylia Higgins-->
 </head>
 <!--Give Contact page body an ID-->
-<body id="contact-body">
-  <!-- Header + Website's Navigation bar-->
-  <header>
-    <div class="home-content">
-      <a href="index.html"><img src="images/logo.png" alt="image of developer logo" class="mylogo"></a>
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="https://github.com/Th876" target="_blank">My GitHub</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+<body id="contact-body" class="contact-page">
+  <header class="header-contact">
+    <nav class="contact-nav">
+   <a href="index.html"><img src="images/logo.png" alt="image of developer logo" class="contact-logo"></a>
+   <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="projects.html">Projects</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="https://github.com/Th876" target="_blank">My GitHub</a></li>
+         <li><a href="#">Contact</a></li>
+   </ul>
+ </nav>
   </header>
-		<!--Container to hold form information-->
-  <div class="contact-container">
-    <div class="row">
-      <div class="column">
+		<!--Container to hold form information and email icon-->
+    <container class="contact-grid">
+      <div class="contact-left-column">
         <img src="images/message.png" class="msg-logo" alt="Message icon">
       </div>
-      <div class="column">
-        <!--Validate form-->
+      <div class="contact-right-column"><!--Validate form-->
         <form action="https://formsubmit.co/tayhiggins14@gmail.com" method="POST">
           <label for="full-name">Name</label>
           <input type="text" id="fname" name="name" placeholder="Your Full Name" required pattern="^[\p{L}]([-']?[\p{L}]+)*( [\p{L}]([-']?[\p{L}]+)*)+$" title="Please enter a valid name, e.g. John Doe">
           <label for="email">Email</label>
           <input type="email"  name="email" id="email" placeholder="Your Email Address" required pattern="(?!test@test\.com$)[a-z0-9._%+-]{3,}@[a-z]{3,}\.[a-z]{2,}(?:\.[a-z]{2,})?" title="Please enter a valid email address, e.g. johndoe@gmail.com">
-          <input type="hidden" name="_next" value="https://th876.github.io/Portfolio/thank-you.html">
+          <input type="hidden" name="_next" value="thank-you.html">
           <label for="subj">Subject</label>
           <input type="text" id="subj" name="subject" placeholder="Your subject..." required pattern="^[\p{L}]([-']?[\p{L}]+)*( [\p{L}]([-']?[\p{L}]+)*)+$" title="Please enter a subject and leave no space at the end, e.g. Hello">
           <label for="msg">Message</label>
@@ -52,14 +47,8 @@
           <button type="Submit">Send</button> 
         </form>
       </div>
-    </div>
-  </div>
-    <!--Footer -->
-    <footer>
-      <div class="content">
-        <p class="copyright">Copyright ©2021, Designed by Tahaylia Higgins. All Rights Reserved</p>
+       <div class="home-footer home-footer-style"><p class="copyright">Copyright ©2021, Designed by Tahaylia Higgins. All Rights Reserved<br /><span class="msg-icon-attribute">Message Icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span></p></div>
       </div>
-      <div class="msg-icon-attribute">Message Icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> 
-    </footer>
+      </container>
 </body>
 </html>
