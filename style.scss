@@ -9,8 +9,10 @@ $purple-blue: #bda7e8;
 $black: #000000;
 $green: #04b35b;
 $gray: #7c7c7c;
+
 /*-------------------------------------------------*/
 
+/*Start of homepage*/
 #home-body {
     background-color: $eerie-black;
     font-family: 'Roboto Slab', sans-serif;
@@ -19,7 +21,7 @@ $gray: #7c7c7c;
     cursor: default;
 }
 
-/*Style navigation menu*/
+/*Home navigation menu*/
 .header-home {
     margin-top: 0.12rem;
     margin-left: 0.62rem;
@@ -56,7 +58,7 @@ a:hover {
     color:$lavender;
  }
 
-/*Position button and style*/
+/*Homepage button*/
 .project-button {
     border-radius: 20px;
     background-color: $light-pink;
@@ -74,6 +76,7 @@ a:hover {
     border: solid 0.12rem $light-pink;
 }
 
+/*Two column grid*/
 .home-grid {
     background-color: $eerie-black;
     color: $white;
@@ -95,7 +98,8 @@ a:hover {
     right: 180px
 }
 
-.box { /*create box underneath image*/
+/*Box positioned underneath image and styled*/
+.box { 
     background-color: $purple-blue;
     opacity: 0.4;
     width: 23%;
@@ -128,6 +132,7 @@ a:hover {
     padding-bottom: 1.25rem;
 }
 
+/*Homepage footer*/
 .home-footer {
     grid-column-start: 1;
     grid-column-end: end;
@@ -143,10 +148,10 @@ a:hover {
     text-align: center;
     font-size: 0.80rem;
 }
+
 /*-------------------------------------------------*/
 
-/*Project page*/
-
+/*Start of project page*/
 #project-body {
     background-color: $lavender;
     font-family: 'Roboto Slab', serif;
@@ -155,6 +160,7 @@ a:hover {
     overflow-x: hidden;
 }
 
+/*Project page navigation menu*/
 .header-project {
     background-color:$eerie-black;
     height: 4rem;
@@ -189,7 +195,7 @@ a:hover {
     color: $lavender;
 }
 
-/*Projects Section*/
+/*Project cards*/
 #projects {
   font-family: Roboto, sans-serif;
   color: $quartz;
@@ -247,6 +253,7 @@ a:hover {
   text-align: center;
 }
 
+/*Project card buttons*/
 .web-button {
   padding: 8px 0px 8px 0px;
   cursor: pointer;
@@ -272,6 +279,7 @@ a:hover {
  }
   
  
+/*Project page footer*/
 .project-footer {
     background: $black;
     grid-column-start: 1;
@@ -287,9 +295,10 @@ a:hover {
     text-align: center;
     font-size: 0.85rem;
 }
-/*-------------------------------------------------*/
- /*About page*/
 
+/*-------------------------------------------------*/
+ 
+/*Start of about page*/
 #about-body {
     background-color: $lavender;
     font-family: 'Roboto Slab', serif;
@@ -298,6 +307,7 @@ a:hover {
     overflow-x: hidden;
 }
 
+/*About page navigation menu*/
 .header-about {
     background-color:$eerie-black;
     height: 4rem;
@@ -333,6 +343,7 @@ a:hover {
     color: $lavender;
 }
 
+/*Three column grid*/
 .about-grid {
     background: $lavender;
     color: $quartz;
@@ -386,6 +397,7 @@ a:hover {
     background-color: $lavender;
 }
 
+/*About page footer*/
 .about-footer {
     background: $black;
     grid-column-start: 1;
@@ -400,9 +412,10 @@ a:hover {
     text-align: center;
     font-size: 0.85rem;
 }
+
 /*-------------------------------------------------*/
 
-/*Contact page*/
+/*Start of contact page*/
 #contact-body {
     background-color: $lavender;
     font-family: 'Roboto Slab', serif;
@@ -411,6 +424,7 @@ a:hover {
     overflow-x: hidden;
 }
 
+/*Contact page navigation menu*/
 .header-contact {
     background-color: $eerie-black;
     height: 4rem;
@@ -446,6 +460,7 @@ a:hover {
     color: $lavender;
 }
 
+/*Two column grid*/
 .contact-grid {
     background: $lavender;
     color: $quartz;
@@ -469,7 +484,7 @@ a:hover {
     width: 70%;
 }
 
-/*Style input areas*/
+/*Form input areas*/
 input[type=text], [type=email], select, textarea {
   width: 100%;
   padding: 0.93rem;
@@ -493,6 +508,7 @@ button[type=submit] {
   border: none;
 }
 
+/*Form button*/
 button[type=submit]:hover {
   background-color: $white;
   color: $eerie-black;
@@ -505,6 +521,28 @@ button[type=submit]:hover {
   font-weight: 400;
  }
 
+/*Message icon*/
+.msg-logo {
+  width: 60%;
+  height: auto;
+  margin-left: 3.12rem;
+}
+
+/*Contact page footer*/
+.contact-footer {
+    background: $black;
+    grid-column-start: 1;
+    grid-column-end: end;
+    margin-bottom: 0;
+    width: 100%;
+}
+   
+.contact-footer-style {
+    color: $white;
+    padding: 0.2rem;
+    text-align: center;
+    font-size: 0.85rem;
+}
 
 .msg-icon-attribute {
   color: $gray;
@@ -517,13 +555,9 @@ button[type=submit]:hover {
   color: $gray;
 }
 
-.msg-logo {
-  width: 60%;
-  height: auto;
-  margin-left: 3.12rem;
-}
+/*-------------------------------------------------*/
 
-/*Thank you page*/
+/*Start of thank you page*/
 #thankyou-body {
     background-color: $lavender;
     font-size: 1rem;
@@ -531,6 +565,7 @@ button[type=submit]:hover {
     overflow-x: hidden;
 }
 
+/*Thank you page navigation menu*/
 .header-thankyou {
     background-color:$eerie-black;
     height: 4rem;
@@ -612,6 +647,7 @@ span { /*style arrow*/
   font-size: 1rem;
 }
 
+/*Thank you page footer*/ 
 .thankyou-footer {
     background: $black;
     grid-column-start: 1;
@@ -629,19 +665,3 @@ span { /*style arrow*/
   font-size: 0.85rem;
 }
 /*-------------------------------------------------*/
-
-/*Style footer  for Contact page*/
-.contact-footer {
-    background: $black;
-    grid-column-start: 1;
-    grid-column-end: end;
-    margin-bottom: 0;
-    width: 100%;
-}
-   
-.contact-footer-style {
-    color: $white;
-    padding: 0.2rem;
-    text-align: center;
-    font-size: 0.85rem;
-}
