@@ -7,14 +7,16 @@
   <meta name="description" content="Web development, Front-end, Back-end, Fullstack Portfolio Contact page">
   <meta name="author" content="Tahaylia Higgins">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Attach stylesheet-->
   <link rel="stylesheet" type="text/css" href="style.css">
-   <!--External font-->
+   <!--Attach external fonts-->
   <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap" rel="stylesheet">
   <!--Tahaylia Higgins-->
 </head>
-<!--Give Contact page body an ID-->
+<!--Contact page body ID-->
 <body id="contact-body" class="contact-page">
+<!--Navigation menu with logo-->
   <header class="header-contact">
     <nav class="contact-nav">
    <a href="index.html"><img src="images/logo.png" alt="image of developer logo" class="contact-logo"></a>
@@ -27,14 +29,14 @@
    </ul>
  </nav>
   </header>
-		<!--Container to hold form information and email icon-->
-    <container class="contact-grid">
+<!--Container to hold form information and email icon-->
+    <div class="contact-grid">
       <div class="contact-left-column">
         <img src="images/message.png" class="msg-logo" alt="Message icon">
       </div>
       <div class="contact-right-column"><!--Validate form-->
         <form action="https://formsubmit.co/tayhiggins14@gmail.com" method="POST">
-          <label for="full-name">Name</label>
+          <label for="fname">Name</label>
           <input type="text" id="fname" name="name" placeholder="Your Full Name" required pattern="^[\p{L}]([-']?[\p{L}]+)*( [\p{L}]([-']?[\p{L}]+)*)+$" title="Please enter a valid name, e.g. John Doe">
           <label for="email">Email</label>
           <input type="email"  name="email" id="email" placeholder="Your Email Address" required pattern="(?!test@test\.com$)[a-z0-9._%+-]{3,}@[a-z]{3,}\.[a-z]{2,}(?:\.[a-z]{2,})?" title="Please enter a valid email address, e.g. johndoe@gmail.com">
@@ -49,6 +51,5 @@
       </div>
        <div class="home-footer home-footer-style"><p class="copyright">Copyright ©2021, Designed by Tahaylia Higgins. All Rights Reserved<br /><span class="msg-icon-attribute">Message Icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span></p></div>
       </div>
-      </container>
 </body>
 </html>
