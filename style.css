@@ -341,18 +341,18 @@ a:hover {
   color: #d0c6e4;
 }
 
-/*Three column grid*/
+/*Two column grid*/
 .about-grid {
   background: #d0c6e4;
   color: #4a4a4a;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 35% 35% 30%;
-      grid-template-columns: 35% 35% 30%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
   /*divide columns*/
 }
 
-.left-column, .center-column, .right-column {
+.left-column, .right-column {
   margin-left: 0.93rem;
   margin-right: 0.93rem;
   margin-bottom: 3.75rem;
@@ -390,10 +390,6 @@ a:hover {
 
 .left-column {
   background-color: #d0c6e4;
-}
-
-.center-column {
-  background: #d0c6e4;
 }
 
 .right-column {
