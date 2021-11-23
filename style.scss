@@ -343,15 +343,15 @@ a:hover {
     color: $lavender;
 }
 
-/*Two column grid*/
+/*Three column grid*/
 .about-grid {
     background: $lavender;
     color: $quartz;
     display: grid;
-    grid-template-columns: 50% 50%; /*divide columns*/
+    grid-template-columns: 35% 35% 30%; /*divide columns*/
 }
 
-.left-column, .right-column {
+.left-column, .center-column, .right-column {
     margin-left:  0.93rem;
     margin-right: 0.93rem;
     margin-bottom: 3.75rem;
@@ -387,6 +387,10 @@ a:hover {
   
 .left-column {
     background-color: $lavender;
+}
+
+.center-column {
+    background: $lavender;
 }
 
 .right-column {
